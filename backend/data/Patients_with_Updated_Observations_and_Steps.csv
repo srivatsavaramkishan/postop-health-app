@@ -1,0 +1,301 @@
+Patient_ID,Doctor_ID,Checkup_Date,Heart_Rate,Blood_Pressure,Oxygen_Level,Pain_Level,Medication_Taken,Steps_Taken,Symptom_Report,Doctor_Observations,Next_Steps,Hospital,Patient_Status
+P00001,D00004,29/03/25,70,131/84,97,6,False,1264,Dizziness,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00002,D00029,05/01/25,69,115/87,96,5,True,2349,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00003,D00048,04/03/25,95,135/83,95,7,True,1390,Swelling,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00004,D00003,22/02/25,77,122/88,97,3,True,754,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00005,D00035,15/02/25,70,119/80,95,3,False,2137,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00006,D00027,18/03/25,79,116/83,97,4,False,1818,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00007,D00013,16/11/24,93,131/84,96,9,True,1528,Nausea,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00008,D00041,18/12/24,93,124/78,95,2,False,1868,Nausea,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00009,D00015,28/01/25,91,112/83,97,6,True,2359,Dizziness,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00010,D00015,08/11/24,61,139/73,96,1,True,1905,Swelling,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00011,D00047,19/03/25,62,117/83,99,9,True,2008,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00012,D00022,02/04/25,81,118/75,95,9,True,792,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00013,D00004,10/03/25,64,126/81,99,2,True,1651,Fatigue,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00014,D00001,03/02/25,77,116/77,97,6,True,218,Fatigue,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00015,D00017,02/02/25,90,112/83,97,3,True,1181,Nausea,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00016,D00042,03/01/25,88,136/87,98,2,False,2418,Nausea,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00017,D00048,07/01/25,63,116/71,98,4,True,1002,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00018,D00008,14/10/24,94,113/73,96,5,True,1115,Swelling,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00019,D00049,06/04/25,71,116/80,96,3,True,1047,Swelling,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00020,D00022,07/02/25,62,112/73,98,8,True,604,Nausea,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00021,D00008,21/02/25,83,118/78,96,9,True,1602,Swelling,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00022,D00048,27/10/24,76,123/73,98,1,True,1554,Swelling,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00023,D00027,03/02/25,94,122/74,99,2,True,2935,Nausea,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00024,D00030,10/03/25,66,132/83,97,3,True,108,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00025,D00016,03/11/24,89,119/76,99,7,True,1981,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00026,D00029,25/12/24,87,117/72,99,5,True,2834,Dizziness,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00027,D00041,27/11/24,69,132/85,96,1,True,2777,Swelling,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00028,D00018,11/11/24,74,112/79,98,6,True,271,Nausea,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00029,D00011,31/01/25,91,134/84,95,8,True,1785,Fatigue,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00030,D00048,08/11/24,87,131/82,98,6,True,471,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00031,D00032,27/11/24,75,137/79,99,7,True,819,Nausea,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00032,D00006,21/03/25,93,126/83,96,7,True,1216,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00033,D00032,15/03/25,96,130/79,95,6,True,1042,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00034,D00002,21/03/25,60,110/87,97,2,True,2001,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00035,D00035,26/01/25,71,124/79,97,1,True,360,Fatigue,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00036,D00017,17/02/25,89,117/87,99,6,True,234,Dizziness,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00037,D00046,23/12/24,87,136/74,98,8,True,899,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00038,D00017,14/03/25,81,114/75,96,4,True,980,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00039,D00023,16/11/24,93,121/86,98,2,True,220,Fatigue,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00040,D00045,08/01/25,95,127/87,96,9,True,2092,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00041,D00037,18/02/25,99,139/83,97,5,True,659,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00042,D00029,06/04/25,96,137/76,99,7,True,1841,Dizziness,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00043,D00002,13/12/24,73,127/81,99,5,True,1238,Swelling,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00044,D00003,16/03/25,75,129/71,96,8,True,1317,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00045,D00036,25/10/24,87,124/81,99,1,True,2479,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00046,D00035,07/04/25,74,120/78,97,8,False,2081,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00047,D00002,28/01/25,98,118/70,98,1,True,1303,Nausea,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00048,D00050,12/01/25,71,110/70,97,4,True,267,Nausea,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00049,D00005,01/04/25,90,133/84,98,9,True,824,Dizziness,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00050,D00037,14/01/25,66,126/72,99,9,True,2074,Fatigue,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00051,D00010,13/12/24,71,117/82,97,6,True,2645,Dizziness,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00052,D00004,30/10/24,94,112/79,99,3,True,759,Swelling,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00053,D00022,19/03/25,82,115/75,97,2,False,1714,Dizziness,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00054,D00050,07/11/24,80,116/73,98,5,True,648,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00055,D00044,21/02/25,83,133/86,96,4,True,1234,Nausea,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00056,D00049,29/10/24,65,136/87,96,8,True,841,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00057,D00038,27/03/25,79,122/72,96,5,True,1775,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00058,D00022,09/01/25,82,139/87,98,8,True,1590,Dizziness,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00059,D00008,23/02/25,88,119/80,95,3,True,1023,Swelling,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00060,D00004,02/03/25,63,118/83,97,5,True,2864,Swelling,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00061,D00006,21/03/25,71,121/83,98,8,True,1076,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00062,D00020,09/03/25,64,122/80,99,3,True,1312,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00063,D00005,05/04/25,62,116/74,96,3,True,1382,Dizziness,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00064,D00041,03/01/25,80,135/79,96,3,False,2638,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00065,D00046,05/01/25,90,111/75,97,5,True,911,Dizziness,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00066,D00049,25/03/25,96,122/72,98,7,True,169,Nausea,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00067,D00031,20/02/25,78,130/70,99,9,False,330,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00068,D00010,26/02/25,83,123/83,97,6,False,2294,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00069,D00042,03/04/25,71,119/82,95,8,True,1749,Dizziness,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00070,D00008,23/01/25,86,115/86,98,5,True,581,Dizziness,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00071,D00041,07/04/25,94,127/86,95,9,True,2519,Dizziness,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00072,D00003,28/03/25,71,128/77,98,5,True,795,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00073,D00023,04/02/25,77,110/83,98,6,True,2444,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00074,D00014,26/11/24,91,139/75,96,4,True,2420,Fatigue,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00075,D00033,12/11/24,61,123/86,96,5,True,124,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00076,D00016,06/04/25,63,114/86,95,8,False,1757,Fatigue,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00077,D00022,22/03/25,81,123/86,97,1,True,1167,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00078,D00043,13/11/24,82,110/79,99,3,True,1110,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00079,D00043,30/11/24,93,131/85,95,4,True,2460,Dizziness,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00080,D00041,26/03/25,69,110/83,97,9,True,693,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00081,D00024,13/03/25,60,127/89,97,4,True,2377,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00082,D00050,10/04/25,67,114/89,95,7,True,1642,Swelling,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00083,D00024,21/02/25,64,127/77,99,2,True,219,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00084,D00025,23/10/24,92,136/73,96,2,False,2703,Fatigue,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00085,D00049,07/02/25,73,112/82,95,6,True,1794,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00086,D00018,07/04/25,88,127/73,95,5,False,1755,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00087,D00014,23/02/25,99,133/70,95,6,True,1317,Swelling,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00088,D00041,24/10/24,84,126/73,97,8,True,1794,Fatigue,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00089,D00008,27/01/25,87,126/82,97,1,True,2810,Nausea,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00090,D00046,23/11/24,62,124/85,99,8,True,1698,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00091,D00011,02/04/25,65,111/75,98,6,False,1363,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00092,D00045,27/02/25,74,117/80,96,2,True,1907,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00093,D00033,13/10/24,93,113/75,95,5,True,820,Nausea,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00094,D00005,31/01/25,78,122/70,98,5,True,1510,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00095,D00027,02/03/25,86,127/81,99,5,True,1232,Fatigue,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00096,D00037,28/11/24,77,129/76,98,3,True,361,Dizziness,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00097,D00009,23/03/25,83,110/80,97,4,True,2089,Dizziness,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00098,D00017,28/03/25,93,139/71,99,5,False,1848,Nausea,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00099,D00016,19/10/24,82,137/70,95,9,True,2354,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00100,D00047,07/02/25,64,127/86,95,8,True,1596,Dizziness,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00101,D00040,20/10/24,87,114/89,97,3,True,2336,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00102,D00009,05/04/25,74,132/77,97,6,True,1857,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00103,D00050,01/04/25,93,123/72,98,3,True,1429,Swelling,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00104,D00041,27/10/24,62,131/72,96,6,True,731,Dizziness,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00105,D00013,24/02/25,73,119/76,99,9,True,1780,Swelling,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00106,D00040,16/03/25,65,133/89,96,4,True,2889,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00107,D00004,20/03/25,93,121/79,96,7,True,2359,Swelling,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00108,D00045,09/02/25,94,131/73,96,4,True,430,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00109,D00012,10/02/25,63,119/88,97,8,True,547,Nausea,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00110,D00034,30/12/24,61,126/82,96,3,True,1062,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00111,D00009,03/02/25,98,113/81,99,9,True,321,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00112,D00050,06/04/25,78,115/73,99,2,True,946,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00113,D00016,17/12/24,90,133/82,99,1,True,1255,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00114,D00038,20/03/25,82,139/86,98,3,False,786,Nausea,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00115,D00038,02/02/25,78,128/77,95,1,True,1939,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00116,D00029,21/02/25,78,125/89,95,8,True,2833,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00117,D00001,06/02/25,72,119/80,96,3,True,1616,Fatigue,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00118,D00009,18/02/25,83,121/77,97,3,True,1098,Swelling,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00119,D00001,17/01/25,97,118/89,99,9,True,2141,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00120,D00017,18/01/25,92,110/89,98,7,True,2360,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00121,D00011,08/04/25,76,115/72,96,1,True,2859,Swelling,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00122,D00043,22/10/24,92,110/85,99,2,True,1317,Dizziness,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00123,D00023,15/12/24,65,117/74,98,2,True,742,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00124,D00010,24/01/25,93,112/76,95,8,True,1960,Fatigue,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00125,D00044,09/02/25,61,136/88,96,7,True,2910,Swelling,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00126,D00047,10/11/24,75,117/76,97,6,True,1463,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00127,D00047,05/04/25,91,129/88,97,2,False,795,Fatigue,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00128,D00043,26/03/25,64,139/81,95,6,True,1357,Swelling,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00129,D00034,11/12/24,74,131/84,98,9,True,2403,Fatigue,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00130,D00050,01/03/25,94,121/82,98,8,True,2549,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00131,D00024,11/03/25,60,127/85,97,8,False,1809,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00132,D00009,17/12/24,64,116/83,95,1,True,1067,Swelling,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00133,D00005,23/01/25,68,127/89,97,5,True,341,Nausea,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00134,D00004,18/10/24,99,126/81,98,2,True,621,Swelling,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00135,D00031,16/01/25,68,128/78,96,8,True,2790,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00136,D00031,28/03/25,86,126/76,96,8,True,2861,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00137,D00025,16/10/24,81,111/84,99,4,True,2608,Fatigue,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00138,D00027,24/03/25,90,117/84,97,1,True,1992,Swelling,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00139,D00020,14/02/25,74,110/86,99,1,False,814,Dizziness,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00140,D00018,30/10/24,60,138/70,95,2,True,1777,Nausea,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00141,D00032,18/02/25,89,136/83,98,5,True,282,Fatigue,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00142,D00025,27/10/24,66,139/81,95,5,True,537,Swelling,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00143,D00044,19/12/24,89,128/70,95,5,True,2341,Nausea,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00144,D00002,07/01/25,85,123/74,98,3,True,983,Swelling,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00145,D00049,15/02/25,92,118/72,99,7,True,1980,Fatigue,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00146,D00025,19/01/25,90,125/85,96,4,True,750,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00147,D00016,08/03/25,86,138/86,98,9,True,1385,Swelling,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00148,D00002,16/10/24,94,114/72,95,6,True,1362,Swelling,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00149,D00039,18/03/25,85,135/70,96,9,True,628,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00150,D00043,31/03/25,67,137/79,97,3,True,553,Dizziness,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00151,D00015,15/02/25,61,136/76,98,6,True,951,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00152,D00044,27/03/25,64,135/88,97,3,True,418,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00153,D00038,29/10/24,71,132/71,99,5,True,2495,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00154,D00032,08/03/25,73,120/72,98,4,False,746,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00155,D00001,16/02/25,73,114/70,96,8,True,1261,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00156,D00005,12/02/25,70,133/78,95,9,True,1036,Swelling,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00157,D00029,24/01/25,94,122/88,97,5,True,2683,Nausea,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00158,D00050,05/04/25,84,124/75,99,7,True,424,Nausea,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00159,D00033,16/11/24,85,110/77,98,6,True,134,Nausea,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00160,D00014,13/11/24,92,112/86,95,6,True,950,Fatigue,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00161,D00024,07/11/24,69,125/80,96,9,True,2539,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00162,D00046,16/12/24,90,112/79,99,7,False,2430,Swelling,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00163,D00030,20/02/25,96,133/89,98,1,True,794,Fatigue,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00164,D00032,09/01/25,62,134/84,98,1,True,672,Nausea,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00165,D00014,22/03/25,87,121/76,96,3,False,2063,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00166,D00047,12/01/25,85,113/72,98,8,True,1446,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00167,D00048,27/03/25,86,131/84,96,3,True,1758,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00168,D00049,17/03/25,89,134/73,95,8,False,2573,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00169,D00031,28/03/25,92,119/87,95,4,True,1763,Nausea,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00170,D00006,05/02/25,70,129/78,98,7,True,671,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00171,D00017,08/04/25,90,129/88,96,9,True,311,Fatigue,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00172,D00044,24/10/24,81,110/86,96,6,True,301,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00173,D00014,05/04/25,66,118/86,98,5,True,2997,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00174,D00001,05/04/25,89,127/87,97,3,True,1677,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00175,D00027,02/02/25,80,137/72,95,7,True,1834,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00176,D00014,07/11/24,61,116/78,96,4,False,1025,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00177,D00050,25/11/24,77,118/83,95,7,True,869,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00178,D00015,25/11/24,65,129/89,97,3,True,2963,Fatigue,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00179,D00006,23/03/25,94,115/79,97,8,True,2435,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00180,D00049,13/01/25,74,113/85,97,5,True,466,Fatigue,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00181,D00006,11/02/25,61,137/70,95,8,True,2949,Dizziness,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00182,D00044,08/04/25,84,125/86,95,4,True,1898,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00183,D00046,18/03/25,89,113/74,96,5,False,1214,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00184,D00017,18/01/25,83,124/78,98,5,False,2463,Dizziness,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00185,D00026,17/03/25,70,121/84,98,9,False,567,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00186,D00028,31/03/25,94,124/83,99,2,True,861,Nausea,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00187,D00034,01/04/25,81,128/72,99,3,True,1255,Dizziness,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00188,D00027,18/10/24,62,136/87,96,3,True,2495,Nausea,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00189,D00013,04/04/25,91,119/71,97,5,True,1577,Fatigue,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00190,D00028,28/01/25,85,127/80,96,1,False,1349,Nausea,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00191,D00019,17/10/24,88,122/86,98,8,True,854,Fatigue,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00192,D00009,06/03/25,98,122/80,95,8,True,2718,Nausea,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00193,D00006,31/03/25,69,112/73,97,1,True,1653,Dizziness,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00194,D00003,27/01/25,89,129/85,95,6,False,785,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00195,D00003,10/03/25,69,126/83,96,3,True,398,Fatigue,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00196,D00013,15/10/24,81,122/81,96,7,True,2739,Nausea,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00197,D00034,08/12/24,87,125/83,98,6,True,2494,Swelling,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00198,D00038,15/02/25,74,114/82,97,5,True,1190,Dizziness,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00199,D00021,07/03/25,72,136/82,95,3,True,1944,Nausea,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00200,D00034,14/12/24,76,128/89,96,5,True,1009,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00201,D00022,20/10/24,84,115/82,95,9,False,1020,Dizziness,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00202,D00038,21/01/25,80,111/88,99,7,True,2028,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00203,D00003,07/03/25,87,110/75,95,5,True,878,Nausea,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00204,D00043,03/03/25,96,130/89,99,3,True,2855,Nausea,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00205,D00007,11/02/25,84,134/80,95,4,True,544,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00206,D00001,20/01/25,82,126/77,99,8,True,400,Nausea,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00207,D00003,23/12/24,96,125/88,97,4,True,395,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00208,D00039,27/10/24,64,115/81,96,4,True,1808,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00209,D00039,29/01/25,60,126/70,97,8,True,1378,Nausea,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00210,D00020,19/02/25,64,115/83,95,6,True,274,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00211,D00027,27/12/24,67,115/82,97,5,False,2669,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00212,D00011,03/02/25,90,137/72,95,7,False,1333,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00213,D00020,29/10/24,92,111/83,96,3,True,1609,Fatigue,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00214,D00018,05/11/24,82,132/88,98,2,False,2232,Fatigue,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00215,D00034,17/03/25,96,135/73,98,9,False,687,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00216,D00035,01/03/25,75,111/75,97,9,True,2119,Swelling,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00217,D00042,15/01/25,86,113/88,96,5,True,1892,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00218,D00003,01/02/25,90,136/71,95,1,True,1198,Swelling,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00219,D00032,15/11/24,76,119/85,98,7,True,209,Swelling,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00220,D00020,28/03/25,66,116/79,95,8,True,1710,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00221,D00006,27/02/25,90,139/77,95,8,True,142,Swelling,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00222,D00012,22/03/25,96,110/84,95,5,True,1162,Nausea,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00223,D00034,05/03/25,83,134/78,97,1,True,1419,Fatigue,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00224,D00038,23/03/25,90,130/82,95,6,True,2137,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00225,D00009,01/04/25,68,124/82,99,8,True,1851,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00226,D00022,02/02/25,77,116/70,98,8,True,1806,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00227,D00023,08/04/25,83,117/72,95,6,False,1900,Swelling,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00228,D00047,23/02/25,66,124/83,97,1,False,2379,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00229,D00034,04/03/25,74,121/75,96,6,True,767,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00230,D00008,21/01/25,74,137/78,99,8,True,1172,Fatigue,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00231,D00043,12/03/25,64,139/81,98,2,False,2211,Fatigue,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00232,D00019,23/03/25,73,125/81,96,7,True,1798,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00233,D00028,25/01/25,98,114/77,95,2,True,2250,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00234,D00025,22/02/25,65,122/81,97,4,False,1345,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00235,D00033,21/02/25,65,125/71,99,6,True,2790,Nausea,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00236,D00007,11/03/25,98,134/81,95,2,True,379,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00237,D00044,08/02/25,94,131/83,96,8,True,2364,Dizziness,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00238,D00045,17/01/25,72,131/80,98,7,True,1717,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00239,D00046,25/10/24,72,127/79,96,7,True,2163,Fatigue,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00240,D00005,23/12/24,83,111/74,98,5,True,755,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00241,D00018,21/10/24,91,138/77,98,8,True,740,Nausea,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00242,D00017,17/02/25,68,135/87,99,7,True,586,Swelling,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00243,D00025,08/02/25,76,110/71,95,1,True,2616,Dizziness,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00244,D00028,16/02/25,89,127/74,96,3,True,760,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00245,D00031,03/04/25,60,113/75,95,9,False,339,Nausea,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00246,D00005,08/02/25,87,125/86,98,3,True,737,Swelling,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00247,D00040,07/12/24,63,128/83,99,1,False,2986,Dizziness,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00248,D00015,08/11/24,71,117/71,95,1,True,2337,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00249,D00026,12/12/24,89,131/85,96,3,True,944,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00250,D00011,09/03/25,81,119/83,95,3,True,1650,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00251,D00029,20/10/24,90,110/79,98,6,True,2163,Fatigue,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00252,D00007,30/03/25,62,127/70,97,4,True,977,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00253,D00031,09/04/25,90,133/89,99,5,False,319,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00254,D00023,20/11/24,95,136/83,95,2,True,2545,Dizziness,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00255,D00009,17/01/25,79,110/75,98,2,True,2471,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00256,D00039,18/01/25,85,120/86,98,8,True,1525,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00257,D00016,21/01/25,97,121/80,97,1,True,2555,Swelling,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00258,D00047,05/03/25,61,121/87,98,8,True,1301,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00259,D00039,29/03/25,90,118/77,95,9,True,558,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00260,D00027,22/02/25,62,128/72,99,1,True,1251,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00261,D00031,01/03/25,82,117/89,96,5,False,1957,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00262,D00040,20/02/25,93,110/72,95,8,False,1321,Swelling,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00263,D00032,16/12/24,70,137/83,97,5,True,2311,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00264,D00014,18/12/24,88,116/73,99,7,True,1355,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00265,D00033,05/01/25,75,136/80,99,1,True,2871,Swelling,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00266,D00047,06/01/25,68,138/84,96,2,True,2055,Fatigue,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00267,D00013,07/04/25,68,110/76,97,3,True,1409,Swelling,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00268,D00048,17/01/25,92,117/76,97,2,True,134,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00269,D00026,22/11/24,67,136/76,96,7,True,2658,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00270,D00045,01/12/24,73,114/81,99,4,True,1468,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00271,D00009,31/01/25,83,136/74,98,5,True,202,Fatigue,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00272,D00021,13/01/25,93,121/81,97,2,True,2490,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00273,D00048,30/10/24,82,136/79,95,4,True,1629,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00274,D00046,10/12/24,64,110/89,96,6,True,1823,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00275,D00009,07/04/25,82,127/80,97,7,True,2879,Swelling,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00276,D00029,17/02/25,82,127/76,95,3,True,2336,Dizziness,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00277,D00024,24/10/24,89,117/73,99,3,False,1307,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00278,D00010,27/02/25,77,126/81,95,8,True,1322,Dizziness,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00279,D00001,21/03/25,85,129/84,98,2,True,2912,Swelling,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00280,D00018,10/02/25,86,110/81,97,3,True,639,Swelling,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00281,D00019,30/10/24,81,120/87,96,5,True,1462,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00282,D00012,18/03/25,96,127/74,99,6,True,2291,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00283,D00044,06/04/25,88,121/74,95,3,False,1139,Fatigue,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00284,D00050,21/03/25,92,110/80,97,6,True,661,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00285,D00010,10/04/25,91,130/78,98,2,True,2836,Swelling,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00286,D00050,13/01/25,83,127/79,96,6,True,935,Dizziness,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00287,D00029,17/02/25,99,124/77,95,9,True,582,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00288,D00024,22/12/24,97,114/85,97,1,True,263,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00289,D00045,02/04/25,60,112/72,98,2,True,1802,Dizziness,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00290,D00007,01/11/24,88,116/89,97,9,True,1912,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00291,D00026,01/02/25,61,122/75,99,5,True,1197,Nausea,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00292,D00026,31/10/24,85,130/84,95,7,True,633,Dizziness,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00293,D00012,06/01/25,66,115/75,97,9,False,1301,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00294,D00035,03/12/24,85,137/83,97,5,True,2214,Fatigue,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00295,D00030,28/02/25,87,113/85,95,9,True,2827,Swelling,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00296,D00025,29/12/24,75,125/79,95,3,True,1422,Dizziness,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00297,D00004,02/03/25,71,119/81,95,1,True,123,None,Condition improving,Continue current treatment and monitor,SSM Health Hospital,Under Treatment
+P00298,D00017,29/11/24,75,112/74,96,3,False,2835,Swelling,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
+P00299,D00026,20/03/25,66,118/88,98,4,True,468,None,Initial assessment completed,Run diagnostic tests and initiate treatment,SSM Health Hospital,Just Admitted
+P00300,D00018,10/11/24,68,111/79,95,5,True,228,None,Recovery confirmed,Discharge and schedule annual checkup,SSM Health Hospital,Recovered
