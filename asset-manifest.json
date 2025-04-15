@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/postop-health-app/static/css/main.b81e5cba.css",
-    "main.js": "/postop-health-app/static/js/main.06ff075b.js",
+    "main.js": "/postop-health-app/static/js/main.ca6c021a.js",
     "index.html": "/postop-health-app/index.html",
     "main.b81e5cba.css.map": "/postop-health-app/static/css/main.b81e5cba.css.map",
-    "main.06ff075b.js.map": "/postop-health-app/static/js/main.06ff075b.js.map"
+    "main.ca6c021a.js.map": "/postop-health-app/static/js/main.ca6c021a.js.map"
   },
   "entrypoints": [
     "static/css/main.b81e5cba.css",
-    "static/js/main.06ff075b.js"
+    "static/js/main.ca6c021a.js"
   ]
 }
