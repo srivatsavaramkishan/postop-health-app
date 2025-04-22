@@ -9,7 +9,7 @@ connectDB();
 
 const importObservations = async () => {
   try {
-    const observations = await csv().fromFile('data/Patients_with_Updated_Observations_and_Steps.csv');
+    const observations = await csv().fromFile('data/Final_Vitals_Data_3000_Patients.csv');
 
     const formattedObservations = observations.map((obs) => ({
       patientId: obs.Patient_ID,

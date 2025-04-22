@@ -6,10 +6,7 @@ const doctorSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
-  name: {
-    type: String,
-    required: true,
-  },
+  name: String,
   gender: String,
   age: Number,
   specialty: String,

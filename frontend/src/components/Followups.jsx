@@ -3,10 +3,10 @@
 import React, { useEffect, useState } from 'react';
 import axiosInstance from '../api/axiosInstance';
 
-const Followups = ({ patientId }) => {
+const Followups = ({ patientId, checkupDate, canEdit }) => {
   const [followups, setFollowups] = useState([]);
   const [newFollowup, setNewFollowup] = useState({
-    followupDate: '',
+    followupDate: checkupDate,
     purpose: '',
     status: 'Scheduled'
   });
@@ -14,25 +14,24 @@ const Followups = ({ patientId }) => {
   useEffect(() => {
     const fetchFollowups = async () => {
       try {
-        const response = await axiosInstance.get('/followups');
-        const filtered = response.data.filter((f) => f.patientId === patientId);
+        const res = await axiosInstance.get('/followups');
+        const filtered = res.data.filter(f => f.patientId === patientId && f.followupDate === checkupDate);
         setFollowups(filtered);
-      } catch (error) {
-        console.error('Error fetching followups:', error);
+      } catch (err) {
+        console.error('❌ Error fetching followups:', err);
       }
     };
-
     fetchFollowups();
-  }, [patientId]);
+  }, [patientId, checkupDate]);
 
   const handleAddFollowup = async () => {
     try {
-      const response = await axiosInstance.post(
+      const res = await axiosInstance.post(
         '/followups',
         {
           ...newFollowup,
           patientId,
-          doctorId: 'D-2001' // Replace with logged-in doctor ID later
+          doctorId: 'D00045'
         },
         {
           headers: {
@@ -41,19 +40,19 @@ const Followups = ({ patientId }) => {
           }
         }
       );
-      setFollowups([...followups, response.data]);
-      setNewFollowup({ followupDate: '', purpose: '', status: 'Scheduled' });
-    } catch (error) {
-      console.error('Error adding followup:', error);
+      setFollowups([...followups, res.data]);
+      setNewFollowup({ followupDate: checkupDate, purpose: '', status: 'Scheduled' });
+    } catch (err) {
+      console.error('❌ Error adding followup:', err);
     }
   };
 
   return (
     <div className="bg-white p-4 rounded shadow">
-      <h2 className="text-xl font-bold mb-4">Follow-up Checkups</h2>
+      <h2 className="text-xl font-bold mb-4">🔁 Follow-up Checkups</h2>
 
       {followups.length === 0 ? (
-        <p>No Follow-ups Found</p>
+        <p>No Follow-ups Found for {checkupDate}</p>
       ) : (
         <ul className="list-disc pl-5 mb-4">
           {followups.map((f, idx) => (
@@ -64,24 +63,19 @@ const Followups = ({ patientId }) => {
         </ul>
       )}
 
-      <div className="space-y-2">
-        <input
-          type="date"
-          value={newFollowup.followupDate}
-          onChange={(e) => setNewFollowup({ ...newFollowup, followupDate: e.target.value })}
-          className="border p-2 w-full"
-        />
-        <input
-          type="text"
-          placeholder="Purpose"
-          value={newFollowup.purpose}
-          onChange={(e) => setNewFollowup({ ...newFollowup, purpose: e.target.value })}
-          className="border p-2 w-full"
-        />
-        <button onClick={handleAddFollowup} className="bg-green-500 text-white px-4 py-2 rounded">
-          Add Follow-up
-        </button>
-      </div>
+      {canEdit && (
+        <div className="space-y-2">
+          <input type="text" placeholder="Purpose" value={newFollowup.purpose} onChange={(e) => setNewFollowup({ ...newFollowup, purpose: e.target.value })} className="border p-2 w-full" />
+          <select value={newFollowup.status} onChange={(e) => setNewFollowup({ ...newFollowup, status: e.target.value })} className="border p-2 w-full">
+            <option value="Scheduled">Scheduled</option>
+            <option value="Completed">Completed</option>
+            <option value="Missed">Missed</option>
+          </select>
+          <button onClick={handleAddFollowup} className="bg-green-500 text-white px-4 py-2 rounded">
+            Add Follow-up
+          </button>
+        </div>
+      )}
     </div>
   );
 };

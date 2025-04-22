@@ -1,5 +1,3 @@
-// src/api/axiosInstance.js
-
 import axios from 'axios';
 
 const axiosInstance = axios.create({
@@ -7,6 +5,7 @@ const axiosInstance = axios.create({
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
+    'X-User-Role': 'Patient'  // ✅ add this manually for now
   },
 });
 

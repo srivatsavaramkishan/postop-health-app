@@ -9,7 +9,7 @@ connectDB();
 
 const importFollowups = async () => {
   try {
-    const followups = await csv().fromFile('data/Updated_Followups__200_Patients_.csv');
+    const followups = await csv().fromFile('data/Complete_Followup_Checkup_Data_3000_Patients.csv');
 
     const formattedFollowups = followups.map((f) => ({
       patientId: f.Patient_ID,
