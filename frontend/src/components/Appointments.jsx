@@ -12,7 +12,7 @@ const Appointments = ({ doctorId, onSelectPatient }) => {
         const response = await axiosInstance.get('/followups');
         const filteredAppointments = response.data
           .filter((appointment) => appointment.doctorId === doctorId)
-          .sort((a, b) => new Date(b.followupDate) - new Date(a.followupDate));
+          .sort((a, b) => new Date(b.presentDate) - new Date(a.presentDate));
         setAppointments(filteredAppointments);
       } catch (error) {
         console.error('Error fetching appointments:', error);
@@ -36,7 +36,7 @@ const Appointments = ({ doctorId, onSelectPatient }) => {
             onClick={() => onSelectPatient(appointment.patientId)}
           >
             <p><strong>Patient ID:</strong> <span className="text-blue-600 underline">{appointment.patientId}</span></p>
-            <p><strong>Follow-up Date:</strong> {appointment.followupDate}</p>
+            <p><strong>Present Date:</strong> {appointment.presentDate}</p>
             <p><strong>Purpose:</strong> {appointment.purpose}</p>
             <p><strong>Status:</strong> {appointment.status}</p>
           </div>

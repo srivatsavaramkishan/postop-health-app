@@ -1,23 +1,26 @@
-// src/components/Vitals.jsx
-
+// ✅ Vitals.jsx updated to show all relevant data fields
 import React, { useEffect, useState } from 'react';
 import axiosInstance from '../api/axiosInstance';
 
 const Vitals = ({ patientId, checkupDate, canEdit }) => {
   const [vitals, setVitals] = useState([]);
   const [newVital, setNewVital] = useState({
-    checkupDate: checkupDate,
+    presentDate: checkupDate,
     heartRate: '',
     bloodPressure: '',
     oxygenLevel: '',
-    painLevel: ''
+    painLevel: '',
+    medicationTaken: '',
+    symptomReport: '',
+    doctorObservations: '',
+    nextSteps: ''
   });
 
   useEffect(() => {
     const fetchVitals = async () => {
       try {
         const response = await axiosInstance.get(`/observations/patient/${patientId}`);
-        const filtered = response.data.filter(v => v.checkupDate === checkupDate);
+        const filtered = response.data.filter(v => v.presentDate === checkupDate);
         setVitals(filtered);
       } catch (err) {
         console.error('❌ Error fetching vitals:', err);
@@ -34,7 +37,8 @@ const Vitals = ({ patientId, checkupDate, canEdit }) => {
         {
           ...newVital,
           patientId,
-          doctorId: 'D00045'
+          doctorId: 'D00045',
+          presentDate: checkupDate
         },
         {
           headers: {
@@ -44,7 +48,17 @@ const Vitals = ({ patientId, checkupDate, canEdit }) => {
         }
       );
       setVitals([...vitals, response.data]);
-      setNewVital({ checkupDate, heartRate: '', bloodPressure: '', oxygenLevel: '', painLevel: '' });
+      setNewVital({
+        presentDate: checkupDate,
+        heartRate: '',
+        bloodPressure: '',
+        oxygenLevel: '',
+        painLevel: '',
+        medicationTaken: '',
+        symptomReport: '',
+        doctorObservations: '',
+        nextSteps: ''
+      });
     } catch (err) {
       console.error('❌ Error adding vitals:', err);
     }
@@ -60,21 +74,29 @@ const Vitals = ({ patientId, checkupDate, canEdit }) => {
         <table className="w-full mb-4 border">
           <thead>
             <tr className="bg-gray-100">
-              <th className="p-2 border">Date</th>
+              <th className="p-2 border">Present Date</th>
               <th className="p-2 border">Heart Rate</th>
               <th className="p-2 border">Blood Pressure</th>
               <th className="p-2 border">Oxygen Level</th>
               <th className="p-2 border">Pain Level</th>
+              <th className="p-2 border">Medication Taken</th>
+              <th className="p-2 border">Symptom Report</th>
+              <th className="p-2 border">Doctor Observations</th>
+              <th className="p-2 border">Next Steps</th>
             </tr>
           </thead>
           <tbody>
             {vitals.map((v, idx) => (
               <tr key={idx}>
-                <td className="p-2 border">{v.checkupDate}</td>
+                <td className="p-2 border">{v.presentDate}</td>
                 <td className="p-2 border">{v.heartRate}</td>
                 <td className="p-2 border">{v.bloodPressure}</td>
                 <td className="p-2 border">{v.oxygenLevel}</td>
                 <td className="p-2 border">{v.painLevel}</td>
+                <td className="p-2 border">{v.medicationTaken}</td>
+                <td className="p-2 border">{v.symptomReport}</td>
+                <td className="p-2 border">{v.doctorObservations}</td>
+                <td className="p-2 border">{v.nextSteps}</td>
               </tr>
             ))}
           </tbody>
@@ -87,6 +109,10 @@ const Vitals = ({ patientId, checkupDate, canEdit }) => {
           <input type="text" placeholder="Blood Pressure" className="border p-2 w-full" value={newVital.bloodPressure} onChange={(e) => setNewVital({ ...newVital, bloodPressure: e.target.value })} />
           <input type="text" placeholder="Oxygen Level" className="border p-2 w-full" value={newVital.oxygenLevel} onChange={(e) => setNewVital({ ...newVital, oxygenLevel: e.target.value })} />
           <input type="text" placeholder="Pain Level" className="border p-2 w-full" value={newVital.painLevel} onChange={(e) => setNewVital({ ...newVital, painLevel: e.target.value })} />
+          <input type="text" placeholder="Medication Taken" className="border p-2 w-full" value={newVital.medicationTaken} onChange={(e) => setNewVital({ ...newVital, medicationTaken: e.target.value })} />
+          <input type="text" placeholder="Symptom Report" className="border p-2 w-full" value={newVital.symptomReport} onChange={(e) => setNewVital({ ...newVital, symptomReport: e.target.value })} />
+          <input type="text" placeholder="Doctor Observations" className="border p-2 w-full" value={newVital.doctorObservations} onChange={(e) => setNewVital({ ...newVital, doctorObservations: e.target.value })} />
+          <input type="text" placeholder="Next Steps" className="border p-2 w-full" value={newVital.nextSteps} onChange={(e) => setNewVital({ ...newVital, nextSteps: e.target.value })} />
           <button onClick={handleAddVital} className="bg-green-500 text-white px-4 py-2 rounded">Add Vitals</button>
         </div>
       )}

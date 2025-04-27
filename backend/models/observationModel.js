@@ -1,14 +1,12 @@
+// observationModel.js
 const mongoose = require('mongoose');
-
 const observationSchema = new mongoose.Schema({
   patientId: {
-    type: String, // From CSV directly (Patient_ID)
+    type: String,
     required: true,
   },
-  doctorId: {
-    type: String, // From CSV directly (Doctor_ID)
-  },
-  checkupDate: String,
+  doctorId: String,
+  presentDate: String, // 🆕 replaces checkupDate
   heartRate: String,
   bloodPressure: String,
   oxygenLevel: String,
@@ -18,8 +16,6 @@ const observationSchema = new mongoose.Schema({
   symptomReport: String,
   doctorObservations: String,
   nextSteps: String,
-  hospital: String,
-  patientStatus: String,
 });
 
 module.exports = mongoose.model('Observation', observationSchema);

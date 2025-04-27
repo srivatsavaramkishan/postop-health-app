@@ -1,7 +1,7 @@
 // src/components/PatientProfile.jsx
 
 import React, { useEffect, useState } from 'react';
-import axiosInstance from '../api/axiosInstance'
+import axiosInstance from '../api/axiosInstance';
 import Medications from './Medications';
 import Followups from './Followups';
 import Vitals from './Vitals';
@@ -19,7 +19,7 @@ const PatientProfile = ({ patientId, role }) => {
         setPatient(profileRes.data);
 
         const obsRes = await axiosInstance.get(`/observations/patient/${patientId}`);
-        const uniqueDates = [...new Set(obsRes.data.map(o => o.checkupDate))].sort((a, b) => new Date(b) - new Date(a));
+        const uniqueDates = [...new Set(obsRes.data.map(o => o.presentDate))].sort((a, b) => new Date(b) - new Date(a));
         setCheckupDates(uniqueDates);
         setSelectedCheckupDate(uniqueDates[0] || '');
       } catch (error) {
@@ -45,12 +45,13 @@ const PatientProfile = ({ patientId, role }) => {
           <p><strong>Patient ID:</strong> {patient.patientId}</p>
           <p><strong>Age:</strong> {patient.age}</p>
           <p><strong>Gender:</strong> {patient.gender}</p>
+          <p><strong>Cause of Operation:</strong> {patient.causeOfOperation}</p>
         </div>
       )}
 
       {checkupDates.length > 0 && (
         <div className="mb-4">
-          <label htmlFor="checkup-date" className="mr-2">Select Checkup Date:</label>
+          <label htmlFor="checkup-date" className="mr-2">Select Present Date:</label>
           <select
             id="checkup-date"
             value={selectedCheckupDate}

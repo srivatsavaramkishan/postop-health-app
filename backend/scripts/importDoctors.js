@@ -1,3 +1,4 @@
+// importDoctors.js
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const csvtojson = require('csvtojson');
@@ -9,7 +10,7 @@ connectDB();
 
 const importDoctors = async () => {
   try {
-    const doctors = await csvtojson().fromFile('./data/Updated_Doctors_with_Specialty.csv');
+    const doctors = await csvtojson().fromFile('./data/Cleaned_Doctor_Data.csv');
 
     const formattedDoctors = doctors.map((doc) => ({
       doctor_id: doc['Doctor_ID'],
@@ -24,13 +25,14 @@ const importDoctors = async () => {
       location: doc['Location'],
       phone_number: doc['Phone_Number'],
       address: doc['Address'],
+      specialisedInOperations: doc['Specialised in Operations'],
     }));
 
     await Doctor.insertMany(formattedDoctors);
-    console.log('Doctors Imported Successfully!');
+    console.log('✅ Doctors Imported Successfully!');
     process.exit();
   } catch (error) {
-    console.error('Error importing doctors:', error);
+    console.error('❌ Error importing doctors:', error);
     process.exit(1);
   }
 };

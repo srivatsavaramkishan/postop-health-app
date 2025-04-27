@@ -1,3 +1,5 @@
+
+// importPatients.js
 const mongoose = require('mongoose');
 const csv = require('csv-parser');
 const fs = require('fs');
@@ -12,7 +14,7 @@ mongoose.connect(process.env.MONGO_URI, {
   useUnifiedTopology: true,
 });
 
-const filePath = path.join(__dirname, '../data/Cleaned_Patient_Data_3000_Without_Specialty_Experience.csv');
+const filePath = path.join(__dirname, '../data/Cleaned_Patient_Data.csv');
 const patients = [];
 
 fs.createReadStream(filePath)
@@ -49,7 +51,8 @@ fs.createReadStream(filePath)
           ethnicity: row.ETHNICITY,
           healthcareCoverage: row.HEALTHCARE_COVERAGE,
           address: row.Address,
-          doctor: row.Doctor_ID, // ✅ Store Doctor_ID directly
+          doctor: row.Doctor_ID,
+          causeOfOperation: row['Cause of Operation'],
         };
 
         await Patient.findOneAndUpdate(
