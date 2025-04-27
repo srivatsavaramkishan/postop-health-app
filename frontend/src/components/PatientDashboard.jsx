@@ -32,7 +32,7 @@ const PatientDashboard = () => {
       }
 
       const obsRes = await axiosInstance.get(`/observations/patient/${inputPatientId}`);
-      const uniqueDates = [...new Set(obsRes.data.map(o => o.checkupDate))].sort((a, b) => new Date(b) - new Date(a));
+      const uniqueDates = [...new Set(obsRes.data.map(o => o.presentDate))].sort((a, b) => new Date(b) - new Date(a));
       setCheckupDates(uniqueDates);
       setSelectedCheckupDate(uniqueDates[0] || '');
 
@@ -75,6 +75,7 @@ const PatientDashboard = () => {
             <p>Gender: {patientInfo.gender}</p>
             <p>Address: {patientInfo.address}</p>
             <p>Phone: {patientInfo.phone}</p>
+            <p>Cause of Operation: {patientInfo.causeOfOperation || 'N/A'}</p>
           </div>
 
           {isDoctorAssigned && doctorInfo && (
@@ -88,7 +89,7 @@ const PatientDashboard = () => {
 
           {checkupDates.length > 0 && (
             <div className="mb-4">
-              <label htmlFor="checkup-date" className="mr-2">Select Checkup Date:</label>
+              <label htmlFor="checkup-date" className="mr-2">Select Present Date:</label>
               <select
                 id="checkup-date"
                 value={selectedCheckupDate}

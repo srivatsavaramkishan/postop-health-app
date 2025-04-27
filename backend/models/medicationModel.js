@@ -1,17 +1,18 @@
+// medicationModel.js
 const mongoose = require('mongoose');
-
 const medicationSchema = new mongoose.Schema({
   patientId: {
-    type: String, // From CSV
+    type: String,
     required: true,
   },
+  doctorId: String,
+  presentDate: String, // 🆕 New field
   medicationName: String,
-  medicationType: String,
   dosage: String,
   frequency: String,
   startDate: String,
   endDate: String,
-  doctorId: String,
+  nextCheckupDate: String, // 🆕 New field
 });
 
 module.exports = mongoose.model('Medication', medicationSchema);

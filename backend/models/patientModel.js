@@ -1,5 +1,5 @@
+// patientModel.js
 const mongoose = require('mongoose');
-
 const patientSchema = new mongoose.Schema({
   patientId: {
     type: String,
@@ -10,7 +10,7 @@ const patientSchema = new mongoose.Schema({
   first: String,
   middle: String,
   last: String,
-  name: String, // optional concatenated name
+  name: String,
   gender: String,
   birthDate: String,
   age: String,
@@ -30,11 +30,8 @@ const patientSchema = new mongoose.Schema({
   ethnicity: String,
   healthcareCoverage: String,
   address: String,
-
-  // ✅ Storing as Doctor_ID (string)
-  doctor: {
-    type: String, // e.g., "D00050"
-  }
+  causeOfOperation: String, // 🆕 New field
+  doctor: String, // Doctor_ID
 });
 
 module.exports = mongoose.model('Patient', patientSchema);
