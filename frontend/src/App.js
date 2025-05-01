@@ -1,6 +1,6 @@
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom'; // Use NavLink for active link
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Team from './pages/Team';
@@ -17,9 +17,27 @@ function App() {
 
           <div className="flex space-x-4 items-center">
             <nav className="space-x-4">
-              <Link to="/">Home</Link>
-              <Link to="/dashboard">Dashboard</Link>
-              <Link to="/team">Team</Link>
+              <NavLink
+                to="/"
+                className="text-white"
+                activeClassName="text-yellow-300"
+              >
+                Home
+              </NavLink>
+              <NavLink
+                to="/dashboard"
+                className="text-white"
+                activeClassName="text-yellow-300"
+              >
+                Dashboard
+              </NavLink>
+              <NavLink
+                to="/team"
+                className="text-white"
+                activeClassName="text-yellow-300"
+              >
+                Team
+              </NavLink>
             </nav>
             <select
               value={role}
