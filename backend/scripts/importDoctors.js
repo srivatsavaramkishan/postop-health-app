@@ -9,7 +9,7 @@ connectDB();
 
 const importDoctors = async () => {
   try {
-    const doctors = await csvtojson().fromFile('./data/Doctors_with_Updated_Contact_Details.csv');
+    const doctors = await csvtojson().fromFile('./data/Updated_Doctors_with_Specialty.csv');
 
     const formattedDoctors = doctors.map((doc) => ({
       doctor_id: doc['Doctor_ID'],

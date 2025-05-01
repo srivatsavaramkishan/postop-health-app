@@ -1,59 +1,38 @@
+// src/components/PatientProfile.jsx
+
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import axiosInstance from '../api/axiosInstance'
+import Medications from './Medications';
 import Followups from './Followups';
+import Vitals from './Vitals';
 
-const PatientProfile = ({ patientId }) => {
+const PatientProfile = ({ patientId, role }) => {
   const [patient, setPatient] = useState(null);
-  const [medications, setMedications] = useState([]);
-  const [vitals, setVitals] = useState([]);
-
-  const [newMedication, setNewMedication] = useState({
-    medicationName: '',
-    medicationType: '',
-    dosage: '',
-    frequency: ''
-  });
+  const [checkupDates, setCheckupDates] = useState([]);
+  const [selectedCheckupDate, setSelectedCheckupDate] = useState('');
+  const [canEdit, setCanEdit] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const profileRes = await axios.get(`/api/patients/patient-id/${patientId}`);
-        const medsRes = await axios.get(`/api/medications?patientId=${patientId}`);
-        const vitalsRes = await axios.get(`/api/observations/patient/${patientId}`);
-
+        const profileRes = await axiosInstance.get(`/patients/patient-id/${patientId}`);
         setPatient(profileRes.data);
-        setMedications(medsRes.data);
-        setVitals(vitalsRes.data);
+
+        const obsRes = await axiosInstance.get(`/observations/patient/${patientId}`);
+        const uniqueDates = [...new Set(obsRes.data.map(o => o.checkupDate))].sort((a, b) => new Date(b) - new Date(a));
+        setCheckupDates(uniqueDates);
+        setSelectedCheckupDate(uniqueDates[0] || '');
       } catch (error) {
-        console.error('Error loading patient data:', error);
+        console.error('Error loading patient profile:', error);
       }
     };
 
     fetchData();
   }, [patientId]);
 
-  const handleAddMedication = async () => {
-    try {
-      const res = await axios.post(
-        '/api/medications',
-        {
-          ...newMedication,
-          patientId,
-          doctorId: 'D-2001' // Dynamic later
-        },
-        {
-          headers: {
-            'x-user-role': 'doctor',
-            'Content-Type': 'application/json'
-          }
-        }
-      );
-      setMedications([...medications, res.data]);
-      setNewMedication({ medicationName: '', medicationType: '', dosage: '', frequency: '' });
-    } catch (error) {
-      console.error('Error adding medication:', error);
-    }
-  };
+  useEffect(() => {
+    setCanEdit(role === 'doctor');
+  }, [role]);
 
   return (
     <div className="p-4">
@@ -69,97 +48,35 @@ const PatientProfile = ({ patientId }) => {
         </div>
       )}
 
-      {/* Medications Section */}
+      {checkupDates.length > 0 && (
+        <div className="mb-4">
+          <label htmlFor="checkup-date" className="mr-2">Select Checkup Date:</label>
+          <select
+            id="checkup-date"
+            value={selectedCheckupDate}
+            onChange={(e) => setSelectedCheckupDate(e.target.value)}
+            className="border p-2"
+          >
+            {checkupDates.map((date, index) => (
+              <option key={index} value={date}>{date}</option>
+            ))}
+          </select>
+        </div>
+      )}
+
       <div className="mb-6">
         <h3 className="font-semibold text-xl mb-2">Medications</h3>
-        <table className="w-full mb-2 border">
-          <thead>
-            <tr className="bg-gray-100">
-              <th className="p-2 border">Name</th>
-              <th className="p-2 border">Type</th>
-              <th className="p-2 border">Dosage</th>
-              <th className="p-2 border">Frequency</th>
-            </tr>
-          </thead>
-          <tbody>
-            {medications.map((med, index) => (
-              <tr key={index}>
-                <td className="p-2 border">{med.medicationName}</td>
-                <td className="p-2 border">{med.medicationType}</td>
-                <td className="p-2 border">{med.dosage}</td>
-                <td className="p-2 border">{med.frequency}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-
-        {/* Add Medication Form */}
-        <div className="space-y-2">
-          <input
-            type="text"
-            placeholder="Medication Name"
-            className="border p-2 w-full"
-            value={newMedication.medicationName}
-            onChange={(e) => setNewMedication({ ...newMedication, medicationName: e.target.value })}
-          />
-          <input
-            type="text"
-            placeholder="Medication Type"
-            className="border p-2 w-full"
-            value={newMedication.medicationType}
-            onChange={(e) => setNewMedication({ ...newMedication, medicationType: e.target.value })}
-          />
-          <input
-            type="text"
-            placeholder="Dosage"
-            className="border p-2 w-full"
-            value={newMedication.dosage}
-            onChange={(e) => setNewMedication({ ...newMedication, dosage: e.target.value })}
-          />
-          <input
-            type="text"
-            placeholder="Frequency"
-            className="border p-2 w-full"
-            value={newMedication.frequency}
-            onChange={(e) => setNewMedication({ ...newMedication, frequency: e.target.value })}
-          />
-          <button onClick={handleAddMedication} className="bg-green-500 text-white px-4 py-2 rounded">
-            Add Medication
-          </button>
-        </div>
+        <Medications patientId={patientId} checkupDate={selectedCheckupDate} canEdit={canEdit} />
       </div>
 
-      {/* Vitals Section */}
-      <div className="mb-6">
-        <h3 className="font-semibold text-xl mb-2">Vitals</h3>
-        <table className="w-full border">
-          <thead>
-            <tr className="bg-gray-100">
-              <th className="p-2 border">Date</th>
-              <th className="p-2 border">Heart Rate</th>
-              <th className="p-2 border">Blood Pressure</th>
-              <th className="p-2 border">Oxygen Level</th>
-              <th className="p-2 border">Pain Level</th>
-            </tr>
-          </thead>
-          <tbody>
-            {vitals.map((v, index) => (
-              <tr key={index}>
-                <td className="p-2 border">{v.checkupDate}</td>
-                <td className="p-2 border">{v.heartRate}</td>
-                <td className="p-2 border">{v.bloodPressure}</td>
-                <td className="p-2 border">{v.oxygenLevel}</td>
-                <td className="p-2 border">{v.painLevel}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      {/* Followups Section */}
       <div className="mb-6">
         <h3 className="font-semibold text-xl mb-2">Follow-up Checkups</h3>
-        <Followups patientId={patientId} />
+        <Followups patientId={patientId} checkupDate={selectedCheckupDate} canEdit={canEdit} />
+      </div>
+
+      <div className="mb-6">
+        <h3 className="font-semibold text-xl mb-2">Vitals</h3>
+        <Vitals patientId={patientId} checkupDate={selectedCheckupDate} canEdit={canEdit} />
       </div>
     </div>
   );
